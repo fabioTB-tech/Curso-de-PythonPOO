@@ -7,8 +7,8 @@ class Funcionario:
         self.cargo = cargo
         self.empresa = emp
     
-    def apresentacao(self):
-        return f':V: Olá, sou [blue]{self.nome}[/] e sou {self.cargo} do setor de {self.setor} da empresa {self.empresa}'
+    def apresentacao(self) -> str:
+        return f':handshake: Olá, sou [blue]{self.nome}[/] e sou [u]{self.cargo}[/] do setor de {self.setor} da empresa {self.empresa}'
 
 
 c1 = Funcionario('Maria', 'Administração', 'Diretora')
